@@ -1,0 +1,13 @@
+trim
+====
+
+trim input text; optionally with trailing characters.
+
+	# trim text without trailing
+	echo "this is a test" | trim 3
+	thi
+	
+	# trim text with trailing '...'
+	echo "this is a test" | trim 3 "..."
+	thi...
+

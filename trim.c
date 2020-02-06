@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 void usage(void) {
-	printf("usage: trail <number> [trail]\n");
+	printf("usage: trim <number> [trail]\n");
 }
 
 int main(int argc, char *argv[]) {

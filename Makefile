@@ -1,4 +1,4 @@
-# trail (POSIX) Makefile
+# trim (POSIX) Makefile
 .POSIX:
 .SUFFIXES: .c .o
 
@@ -11,12 +11,7 @@ all: $(BIN)
 
 # install
 install:$(BIN)
-	cp $(BIN) $(BINPATH)
-	chmod +x $(BINPATH)
-
-# update
-update:$(BIN)
-	[ -f $(BINPATH) ] && rm -i $(BINPATH)
+	[ ! -f $(BINPATH) ] || rm -i $(BINPATH)
 	cp $(BIN) $(BINPATH)
 	chmod +x $(BINPATH)
 
